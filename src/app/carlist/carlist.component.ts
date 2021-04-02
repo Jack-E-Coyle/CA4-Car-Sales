@@ -12,6 +12,7 @@ import { ICar, Car } from '../interfaces/cars';
 export class CarlistComponent implements OnInit {
   
   carsData: ICar[];
+  show: boolean;
 
   constructor(private _carAPIService:CarApiService) { }
 
