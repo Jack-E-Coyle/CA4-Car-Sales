@@ -19,6 +19,6 @@ export class CarComponent implements OnInit {
 
   
 delCarData(carId:string) {
-  this.cars_data.doc(carId).delete();
+  this.carData.doc(carId).delete();
 }
 }

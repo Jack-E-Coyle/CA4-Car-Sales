@@ -43,6 +43,6 @@ private handleError (err:HttpErrorResponse) {
 }
 
 delCarData(carId:string) {
-  this.carsDataCollection.doc(carId).delete();
+
 }
 }
