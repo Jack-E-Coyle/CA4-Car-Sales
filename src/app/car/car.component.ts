@@ -1,6 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
-import { ICar, Car } from "../interfaces/cars";
 import { CarApiService } from '../services/car-api.service';
+import { ICar, Car } from '../interfaces/cars';
 
 @Component({
   selector: 'app-car',
@@ -17,4 +17,8 @@ export class CarComponent implements OnInit {
   ngOnInit() {
   }
 
+  
+delCarData(carId:string) {
+  this.cars_data.doc(carId).delete();
+}
 }
